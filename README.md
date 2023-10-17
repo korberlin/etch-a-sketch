@@ -4,7 +4,6 @@
 
 ![Etch-a-sketch Preview](/img/etch-a-sketch.png) 
 
-> Replace `path_to_your_preview_image.png` with an actual path if you have a preview image of your project.
 
 ## Description
 
