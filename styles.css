@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    color: #f2f2f2;
+}
+
+#options {
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+#options h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(80, 80, 80);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#gridContainer {
+    width: 512px;
+    height: 512px;
+    border: 2px solid black;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* removed padding */
+    display: flex;
+    /* make it a flex container */
+    flex-wrap: wrap;
+    /* allow wrapping of items */
+}
+
+.gridRow {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    /* include border in element's total width and height */
+}
+
+.gridCell {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(53, 29, 29);
+    transition: background-color 0.3s;
+    flex: 1 1 auto;
+    /* make cells flex items */
+    box-sizing: border-box;
+    /* include border in element's total width and height */
+}
